@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Days\Day1.fs" />
+        <Compile Include="Library.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Helpers\Helpers.fsproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FSharpAux" Version="1.1.0" />
+    </ItemGroup>
+
+</Project>
