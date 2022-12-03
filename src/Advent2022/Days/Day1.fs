@@ -2,8 +2,6 @@
 
 open Helpers
 
-let puzzle = PuzzleInput.load 2022 1 PuzzleInput.Type.Puzzle
-
 let groupByEmptyLine (list: string[]) =
     list
     |> Array.rev // Fold works backwards

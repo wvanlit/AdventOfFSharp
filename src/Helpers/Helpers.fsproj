@@ -9,6 +9,7 @@
         <Compile Include="LoadInput.fs" />
         <Compile Include="Counter.fs" />
         <Compile Include="StringConversion.fs" />
+        <Compile Include="Tests.fs" />
     </ItemGroup>
 
 </Project>

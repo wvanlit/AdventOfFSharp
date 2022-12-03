@@ -1,19 +1,19 @@
-﻿module Advent2022Tests.Days.Day1
+﻿module Advent2022Tests.Days.Day2
 
-open Advent2022.Days.Day1
+open Advent2022.Days.Day2
 open Helpers
 open Helpers.Tests
 open Xunit
 
-let day = 1
+let day = 2
 let input: TestInput = {
     Part1 = {
-        Example = 24000
-        Puzzle = 74198
+        Example = 15
+        Puzzle = 13446
     }
     Part2 = {
-        Example = 45000
-        Puzzle = 209914
+        Example = 12
+        Puzzle = 13509
     }
 }
 
@@ -31,14 +31,3 @@ let ``Part 2 - Example`` () = Assert.Equal(input.Part2.Example, Part2 example)
 
 [<Fact>]
 let ``Part 2 - Puzzle`` () = Assert.Equal(input.Part2.Puzzle, Part2 puzzle)
-
-[<Fact>]
-let ``Groups input correctly`` () =
-    let expected =
-        [ [ 1000; 2000; 3000 ]
-          [ 4000 ]
-          [ 5000; 6000 ]
-          [ 7000; 8000; 9000 ]
-          [ 10000 ] ]
-
-    Assert.Equal<int list list>(parseInput example, expected)
