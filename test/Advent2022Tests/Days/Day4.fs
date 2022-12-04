@@ -9,8 +9,8 @@ open Advent2022.Days.Day4
 let day = 4
 
 let input: TestInput =
-    { Part1 = { Example = 1; Puzzle = 1 }
-      Part2 = { Example = 2; Puzzle = 2 } }
+    { Part1 = { Example = 2; Puzzle = 571 }
+      Part2 = { Example = 4; Puzzle = 917 } }
 
 let example =
     PuzzleInput.load 2022 day PuzzleInput.Type.Example
