@@ -7,12 +7,15 @@ type Type =
     | Puzzle
     | Example
 
-let trimAndSplit (s: string) = s.Trim().Split "\r\n"
+let splitOnNewlines (s: string) = s.Split "\r\n"
+
+let trimAndSplit (s: string) = s.Trim () |> splitOnNewlines
+
 let getInputDir =
     let mutable dir: DirectoryInfo =
-        Directory.GetParent(Directory.GetCurrentDirectory())
+        Directory.GetParent (Directory.GetCurrentDirectory ())
 
-    while dir.GetDirectories()
+    while dir.GetDirectories ()
           |> Array.exists (fun (d: DirectoryInfo) -> d.Name = "inputs")
           |> not do
         dir <- Directory.GetParent dir.FullName
@@ -25,6 +28,6 @@ let load year day inputType =
         | Puzzle -> "puzzle"
         | Example -> "example"
 
-    [| getInputDir; "inputs"; year.ToString(); $"{day}_{suffix}.txt" |]
+    [| getInputDir; "inputs"; year.ToString (); $"{day}_{suffix}.txt" |]
     |> Path.Join
     |> File.ReadAllText
