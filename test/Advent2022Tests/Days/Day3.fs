@@ -8,7 +8,7 @@ open Advent2022.Days.Day3
 
 let day = 3
 
-let input: TestInput =
+let input: TestInput<int> =
     { Part1 = { Example = 157; Puzzle = 7746 }
       Part2 = { Example = 70; Puzzle = 2604 } }
 

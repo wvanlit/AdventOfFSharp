@@ -1,11 +1,11 @@
 ﻿module Helpers.Tests
 
-type Part = {
-    Example: int
-    Puzzle: int
+type Part<'T> = {
+    Example: 'T
+    Puzzle: 'T
 }
 
-type TestInput = {
-    Part1: Part
-    Part2: Part
+type TestInput<'T> = {
+    Part1: Part<'T>
+    Part2: Part<'T>
 }

@@ -1,16 +1,16 @@
-﻿module Advent2022Tests.Days.Day4
+﻿module Advent2022Tests.Days.Day5
 
 open Helpers
 open Helpers.Tests
 open Xunit
 
-open Advent2022.Days.Day4
+open Advent2022.Days.Day5
 
-let day = 4
+let day = 5
 
-let input: TestInput<int> =
-    { Part1 = { Example = 2; Puzzle = 571 }
-      Part2 = { Example = 4; Puzzle = 917 } }
+let input: TestInput<string> =
+    { Part1 = { Example = "CMZ"; Puzzle = "" }
+      Part2 = { Example = ""; Puzzle = "" } }
 
 let example =
     PuzzleInput.load 2022 day PuzzleInput.Type.Example
